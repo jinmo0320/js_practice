@@ -4,6 +4,7 @@ const say = document.querySelector(".js-say");
 const current_user = "current_user"
 const HIDE = "hide";
 const SHOW = "show";
+const remove_btn = document.querySelector(".name_remove_btn");
 
 function save_name(text){
     localStorage.setItem("current_user", text)
@@ -37,7 +38,17 @@ function work(){
     }
 }
 
+function remove_storage(){
+    localStorage.removeItem("current_user");
+    window.location.reload();
+}
+
+function remove_btn_work(){
+    remove_btn.addEventListener("click", remove_storage);
+}
+
 function init(){
-    work()
+    work();
+    remove_btn_work();
 }
 init();
