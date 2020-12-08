@@ -25,6 +25,7 @@ body {
   line-height: 130px;
   font-size: 22px;
   font-family: "Nerko One", cursive;
+  text-decoration: none;
 }
 .container *::before {
   position: absolute;
@@ -38,4 +39,7 @@ body {
 }
 .container *:hover::before {
   transform: translate(0, 100%);
+  animation: jinmo 0.8s;
+}
+@keyframes jinmo {
 }
