@@ -20,6 +20,7 @@ body {
 }
 .container * {
   background-color: #ecf0f1;
+  color: black;
   border-radius: 35%;
   text-align: center;
   line-height: 130px;
@@ -35,11 +36,8 @@ body {
   height: 130px;
   border-radius: 35%;
   background-color: #e74d3c;
-  transition: transform 0.8s cubic-bezier(1, 0, 0, 1.4);
+  transition: transform 0.5s cubic-bezier(1, 0, 0, 1.7);
 }
 .container *:hover::before {
   transform: translate(0, 100%);
-  animation: jinmo 0.8s;
-}
-@keyframes jinmo {
 }
